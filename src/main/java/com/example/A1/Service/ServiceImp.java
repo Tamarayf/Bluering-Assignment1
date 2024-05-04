@@ -78,7 +78,7 @@ public class ServiceImp implements Service1 {
                     field.set(entityToUpdate, v);
                 }
             } catch (IllegalAccessException e) {
-                e.printStackTrace(); // Handle the exception as needed
+                e.printStackTrace();
             }
         });
     }
@@ -100,7 +100,7 @@ public class ServiceImp implements Service1 {
         if (employeeEntityOptional.isPresent()) {
             EmployeeEntity employeeEntity = employeeEntityOptional.get();
             EmployeeDTO employeeDTO = mapper.employeeEntityToEmployeeDTO(employeeEntity);
-            // Fetch the department separately
+
             Integer departmentId = employeeEntity.getDepartmentId();
             if (departmentId != null) {
                 DepartmentEntity departmentEntity = repositoryDepartment.findById(departmentId).orElse(null);
