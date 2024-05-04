@@ -22,9 +22,4 @@ public class EmployeeEntity {
     private String empAddress;
     @Basic@Column(name = "dep_id")
     private Integer departmentId;
-    @Transient
-    private String departmentName;
-
-
-
 }
