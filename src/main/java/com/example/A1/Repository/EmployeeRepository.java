@@ -8,7 +8,7 @@ import java.util.List;
 
 
 public interface EmployeeRepository extends JpaRepository<EmployeeEntity,Integer> {
-    List<EmployeeEntity> findByDepartmentId(Integer departmentId);
+
 
 }
 
