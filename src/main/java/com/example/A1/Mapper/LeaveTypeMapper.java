@@ -1,9 +1,7 @@
 package com.example.A1.Mapper;
 
 
-import com.example.A1.DTO.DepartmentDTO;
 import com.example.A1.DTO.LeaveTypeDTO;
-import com.example.A1.Entity.DepartmentEntity;
 import com.example.A1.Entity.LeaveTypeEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

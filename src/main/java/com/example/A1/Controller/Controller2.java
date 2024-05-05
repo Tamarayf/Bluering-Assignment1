@@ -2,10 +2,8 @@ package com.example.A1.Controller;
 
 
 import com.example.A1.Apiresponse;
-import com.example.A1.DTO.DepartmentDTO;
 import com.example.A1.DTO.LeaveTypeDTO;
 import com.example.A1.DTO.LeaveeDTO;
-import com.example.A1.Entity.DepartmentEntity;
 import com.example.A1.Entity.LeaveTypeEntity;
 import com.example.A1.Entity.LeaveeEntity;
 import com.example.A1.Service.Service2;

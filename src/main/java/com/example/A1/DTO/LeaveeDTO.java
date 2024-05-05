@@ -2,7 +2,9 @@ package com.example.A1.DTO;
 
 import lombok.Data;
 
-import java.sql.Date;
+
+
+import java.util.Date;
 
 @Data
 public class LeaveeDTO {
@@ -14,4 +16,5 @@ public class LeaveeDTO {
     private Integer numberOfDays;
     private String note;
     private Integer employeeId;
+
 }

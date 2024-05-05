@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.Objects;
 
 @Setter
@@ -12,9 +12,8 @@ import java.util.Objects;
 @Entity
 @Table(name = "Leavee", schema = "AssignmentBackEnd", catalog = "")
 public class LeaveeEntity {
-    @Id
+    @Id@Column(name = "leave_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "leave_id")
     private int leaveId;
     @Basic@Column(name = "leave_type_id")
     private Integer leaveTypeId;
@@ -28,5 +27,6 @@ public class LeaveeEntity {
     private String note;
     @Basic@Column(name = "employee_id")
     private Integer employeeId;
+
 
 }

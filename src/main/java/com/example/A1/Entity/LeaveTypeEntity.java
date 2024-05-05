@@ -11,10 +11,11 @@ import java.util.Objects;
 @Entity
 @Table(name = "leave_type", schema = "AssignmentBackEnd", catalog = "")
 public class LeaveTypeEntity {
-    @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_leave_type")
+    @Id@Column(name = "id_leave_type")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idLeaveType;
     @Basic@Column(name = "name")
     private String name;
+
 
 }
