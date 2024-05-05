@@ -9,7 +9,7 @@ import java.util.Objects;
 @Setter
 @Getter
 @Entity
-@Table(name = "LeaveType", schema = "AssignmentBackEnd", catalog = "")
+@Table(name = "leave_type", schema = "AssignmentBackEnd", catalog = "")
 public class LeaveTypeEntity {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_leave_type")
