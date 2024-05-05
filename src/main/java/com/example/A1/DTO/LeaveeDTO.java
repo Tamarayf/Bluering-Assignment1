@@ -5,9 +5,9 @@ import lombok.Data;
 import java.sql.Date;
 
 @Data
-public class LeaveDTO {
+public class LeaveeDTO {
 
-    private Integer id;
+    private Integer leaveId;
     private Integer leaveTypeId;
     private Date fromDate;
     private Date toDate;

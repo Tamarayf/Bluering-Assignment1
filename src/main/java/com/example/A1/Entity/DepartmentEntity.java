@@ -14,7 +14,8 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "Department", schema = "AssignmentBackEnd")
 public class DepartmentEntity {
-    @Id@Column(name = "dep_id")
+    @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "dep_id")
     private int depId;
     @Basic@Column(name = "dep_name")
     private String depName;

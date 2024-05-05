@@ -10,10 +10,12 @@ import java.util.Objects;
 @Setter
 @Getter
 @Entity
-@Table(name = "Leave", schema = "AssignmentBackEnd", catalog = "")
-public class LeaveEntity {
-    @Id@Column(name = "id")
-    private int id;
+@Table(name = "Leavee", schema = "AssignmentBackEnd", catalog = "")
+public class LeaveeEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "leave_id")
+    private int leaveId;
     @Basic@Column(name = "leave_type_id")
     private Integer leaveTypeId;
     @Basic@Column(name = "from_date")
@@ -26,4 +28,5 @@ public class LeaveEntity {
     private String note;
     @Basic@Column(name = "employee_id")
     private Integer employeeId;
+
 }
